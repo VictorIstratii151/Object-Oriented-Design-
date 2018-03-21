@@ -1,11 +1,13 @@
 #pragma once
 
+#include "textdisplayobject.h"
+
 #include <vector>
 #include <SFML/Graphics.hpp>
 
 using MessageContainer = std::vector<std::string>;
 
-class Textbox
+class Textbox : public TextDisplayObject
 {
 public:
     Textbox();
