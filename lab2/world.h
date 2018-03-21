@@ -1,10 +1,11 @@
 #pragma once
 
 #include "snake.h"
+#include "gameobject.h"
 
 #include <SFML/Graphics.hpp>
 
-class World
+class World : public GameObject
 {
 public:
     World(sf::Vector2u windSize);
