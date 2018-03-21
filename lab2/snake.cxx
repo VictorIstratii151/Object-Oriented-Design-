@@ -144,7 +144,7 @@ void Snake::Tick()
     if(!(snakeBody.empty()) && !(dir == Direction::None))
     {
         Move();
-        CheckCollision();
+        ComputeCollision();
     }
 }
 

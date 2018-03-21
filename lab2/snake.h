@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include "textbox.h"
+#include "gameobject.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ using SnakeContainer = vector<SnakeSegment>;
 
 enum class Direction{ None, Up, Down, Left, Right };
 
-class Snake
+class Snake : public GameObject
 {
 public:
     Snake(int blockSize, Textbox * textbox);
